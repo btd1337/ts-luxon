@@ -1,6 +1,6 @@
 /* global test expect */
 
-import { casualMatrix } from "../../src/duration";
+import { casualMatrix } from "../../src/duration.ts";
 import { DurationUnit, Duration } from "../../src";
 
 const businessMatrix = {

@@ -1,9 +1,9 @@
-import { NumberingSystem, LocaleOptions } from "./locale";
-import { DateTime } from "../datetime";
-import { Zone } from "../zone";
-import { FormatToken } from "../impl/formatter";
-import { Locale } from "../impl/locale";
-import Intl from "./intl-next";
+import { NumberingSystem, LocaleOptions } from "./locale.ts";
+import { DateTime } from "../datetime.ts";
+import { Zone } from "../zone.ts";
+import { FormatToken } from "../impl/formatter.ts";
+import { Locale } from "../impl/locale.ts";
+import Intl from "./intl-next.ts";
 
 export interface SetZoneOptions {
     keepCalendarTime?: boolean;

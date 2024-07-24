@@ -1,19 +1,19 @@
-import { DateTime, DateTimeLike } from "./datetime";
-import { Duration, DurationLike } from "./duration";
-import { InvalidArgumentError, InvalidIntervalError } from "./errors";
-import { ToISOTimeOptions, DateTimeOptions } from "./types/datetime";
-import { DurationUnit, DurationOptions, DurationObject } from "./types/duration";
-import { IntervalObject } from "./types/interval";
-import { Invalid } from "./types/invalid";
-import { Settings } from "./settings";
-import { isNumber } from "./impl/util";
-import { Formatter } from "./impl/formatter";
-import { DATE_SHORT } from "./impl/formats";
-import { LocaleOptions } from "./types/locale";
-import Intl from "./types/intl-next";
+import { DateTime, DateTimeLike } from "./datetime.ts";
+import { Duration, DurationLike } from "./duration.ts";
+import { InvalidArgumentError, InvalidIntervalError } from "./errors.ts";
+import { ToISOTimeOptions, DateTimeOptions } from "./types/datetime.ts";
+import { DurationUnit, DurationOptions, DurationObject } from "./types/duration.ts";
+import { IntervalObject } from "./types/interval.ts";
+import { Invalid } from "./types/invalid.ts";
+import { Settings } from "./settings.ts";
+import { isNumber } from "./impl/util.ts";
+import { Formatter } from "./impl/formatter.ts";
+import { DATE_SHORT } from "./impl/formats.ts";
+import { LocaleOptions } from "./types/locale.ts";
+import Intl from "./types/intl-next.ts";
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
-const INVALID = "Invalid Interval";
+const INVALID = "Invalid interval.ts";
 
 interface IntervalBoundary {
     time: DateTime;

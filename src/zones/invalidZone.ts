@@ -1,4 +1,4 @@
-import { Zone } from "../zone";
+import { Zone } from "../zone.ts";
 
 /**
  * A zone that failed to parse. You should never need to instantiate this.
