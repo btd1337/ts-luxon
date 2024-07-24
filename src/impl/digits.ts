@@ -1,5 +1,5 @@
-import { NumberingSystem } from "../types/locale";
-import { Locale } from "./locale";
+import { NumberingSystem } from "../types/locale.ts";
+import { Locale } from "./locale.ts";
 
 const numberingSystems: { [key in NumberingSystem]: string } = {
     arab: "[\u0660-\u0669]",

@@ -1,9 +1,9 @@
-import { ConversionAccuracy } from "./common";
-import { NumberingSystem } from "./locale";
-import { Locale } from "../impl/locale";
-import { Invalid } from "./invalid";
-import Intl from "./intl-next";
-import { LocalWeekDateTime, LocalWeekDateTimePlurals } from "./datetime";
+import { ConversionAccuracy } from "./common.ts";
+import { NumberingSystem } from "./locale.ts";
+import { Locale } from "../impl/locale.ts";
+import { Invalid } from "./invalid.ts";
+import Intl from "./intl-next.ts";
+import { LocalWeekDateTime, LocalWeekDateTimePlurals } from "./datetime.ts";
 
 export type ConversionMatrixUnit = Exclude<NormalizedDurationUnit, "milliseconds" | keyof LocalWeekDateTime>;
 export type ConversionMatrix = Readonly<{ [keya in ConversionMatrixUnit]: { [keyb in NormalizedDurationUnit]?: number } }>;

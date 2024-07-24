@@ -1,5 +1,5 @@
-import { DateTime } from "../../src/datetime";
-import { Interval } from "../../src/interval";
+import { DateTime } from "../../src/datetime.ts";
+import { Interval } from "../../src/interval.ts";
 
 //------
 // .count() with useLocaleWeeks

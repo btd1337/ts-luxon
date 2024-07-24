@@ -7,11 +7,11 @@ import {
     ORDERED_UNITS,
     REVERSE_ORDERED_UNITS,
     HUMAN_ORDERED_UNITS
-} from "./impl/util";
-import { Locale } from "./impl/locale";
-import { Formatter } from "./impl/formatter";
-import { parseISODuration, parseISOTimeOnly } from "./impl/regexParser";
-import { InvalidArgumentError, InvalidDurationError, InvalidUnitError } from "./errors";
+} from "./impl/util.ts";
+import { Locale } from "./impl/locale.ts";
+import { Formatter } from "./impl/formatter.ts";
+import { parseISODuration, parseISOTimeOnly } from "./impl/regexParser.ts";
+import { InvalidArgumentError, InvalidDurationError, InvalidUnitError } from "./errors.ts";
 import {
     DurationObject,
     DurationOptions,
@@ -25,14 +25,14 @@ import {
     ConversionMatrixUnit,
     ConversionMatrix,
     DurationConfig as Config
-} from "./types/duration";
-import { ConversionAccuracy } from "./types/common";
-import { Settings } from "./settings";
-import { Invalid } from "./types/invalid";
-import { NumberingSystem } from "./types/locale";
-import { ToISOTimeOptions } from "./types/datetime";
-import Intl from "./types/intl-next";
-import { DateTime } from "./datetime";
+} from "./types/duration.ts";
+import { ConversionAccuracy } from "./types/common.ts";
+import { Settings } from "./settings.ts";
+import { Invalid } from "./types/invalid.ts";
+import { NumberingSystem } from "./types/locale.ts";
+import { ToISOTimeOptions } from "./types/datetime.ts";
+import Intl from "./types/intl-next.ts";
+import { DateTime } from "./datetime.ts";
 
 // unit conversion constants
 // tslint:disable-next-line:naming-convention
@@ -218,7 +218,7 @@ function removeZeroes(vals: DurationObject = {}): DurationObject {
 export class Duration implements NormalizedDurationObject {
 
     private static get _INVALID(): string {
-        return "Invalid Duration";
+        return "Invalid duration.ts";
     }
 
     /**

@@ -1,8 +1,8 @@
 // @ts-ignore
-import {ALL_SUITES as dateTimeSuites} from "./datetime";
+import {ALL_SUITES as dateTimeSuites} from "./datetime.ts";
 
 // @ts-ignore
-import {ALL_SUITES as infoSuites} from "./info";
+import {ALL_SUITES as infoSuites} from "./info.ts";
 
 const allSuites = [...dateTimeSuites, ...infoSuites];
 

@@ -1,14 +1,14 @@
-import * as English from "./english";
-import * as Formats from "./formats";
-import { padStart } from "./util";
-import { Locale, PolyDateFormatter } from "./locale";
-import { DateTime } from "../datetime";
-import { Duration } from "../duration";
-import { StringUnitLength } from "../types/common";
-import { DurationUnit } from "../types/duration";
-import { ZoneOffsetFormat } from "../types/zone";
-import Intl from "../types/intl-next";
-import { Interval } from "../interval";
+import * as English from "./english.ts";
+import * as Formats from "./formats.ts";
+import { padStart } from "./util.ts";
+import { Locale, PolyDateFormatter } from "./locale.ts";
+import { DateTime } from "../datetime.ts";
+import { Duration } from "../duration.ts";
+import { StringUnitLength } from "../types/common.ts";
+import { DurationUnit } from "../types/duration.ts";
+import { ZoneOffsetFormat } from "../types/zone.ts";
+import Intl from "../types/intl-next.ts";
+import { Interval } from "../interval.ts";
 
 function stringifyTokens(
     splits: FormatToken[],

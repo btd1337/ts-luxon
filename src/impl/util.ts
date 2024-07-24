@@ -4,15 +4,15 @@
  it up into, say, parsingUtil.js and basicUtil.js and so on. But they are divided up by feature area.
  */
 
-import { InvalidArgumentError } from "../errors";
-import { TimeObject, GregorianDateTime, GenericDateTimeExtended } from "../types/datetime";
-import { ZoneOffsetFormat } from "../types/zone";
-import { NormalizedDurationUnit, NormalizedHumanDurationUnit } from "../types/duration";
-import { Settings } from "../settings";
-import { dayOfWeek, isoWeekdayToLocal } from "./conversions";
+import { InvalidArgumentError } from "../errors.ts";
+import { TimeObject, GregorianDateTime, GenericDateTimeExtended } from "../types/datetime.ts";
+import { ZoneOffsetFormat } from "../types/zone.ts";
+import { NormalizedDurationUnit, NormalizedHumanDurationUnit } from "../types/duration.ts";
+import { Settings } from "../settings.ts";
+import { dayOfWeek, isoWeekdayToLocal } from "./conversions.ts";
 
-import Intl from "../types/intl-next";
-import { WeekSettings } from "../types/locale";
+import Intl from "../types/intl-next.ts";
+import { WeekSettings } from "../types/locale.ts";
 
 /**
  * @private

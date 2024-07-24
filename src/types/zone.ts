@@ -1,4 +1,4 @@
-import { Zone } from "../zone";
+import { Zone } from "../zone.ts";
 
 export interface ZoneOffsetOptions {
   format?: "short" | "long";

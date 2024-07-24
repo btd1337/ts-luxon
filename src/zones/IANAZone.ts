@@ -1,8 +1,8 @@
-import { formatOffset, parseZoneInfo, isUndefined, objToLocalTS } from "../impl/util";
-import { Zone } from "../zone";
-import { ZoneOffsetOptions, ZoneOffsetFormat } from "../types/zone";
-import { InvalidZoneError } from "../errors";
-import Intl from "../types/intl-next";
+import { formatOffset, parseZoneInfo, isUndefined, objToLocalTS } from "../impl/util.ts";
+import { Zone } from "../zone.ts";
+import { ZoneOffsetOptions, ZoneOffsetFormat } from "../types/zone.ts";
+import { InvalidZoneError } from "../errors.ts";
+import Intl from "../types/intl-next.ts";
 
 let dtfCache: Record<string, Intl.DateTimeFormat> = {};
 

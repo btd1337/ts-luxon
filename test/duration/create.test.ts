@@ -1,5 +1,5 @@
 import { Duration } from "../../src";
-import { InvalidArgumentError, InvalidUnitError } from "../../src/errors";
+import { InvalidArgumentError, InvalidUnitError } from "../../src/errors.ts";
 import { Helpers } from "../helpers";
 
 // ------

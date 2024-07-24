@@ -1,4 +1,4 @@
-import { DateTime } from "../../src/datetime";
+import { DateTime } from "../../src/datetime.ts";
 
 const staticKeys: (keyof typeof DateTime)[] = [
     "DATETIME_FULL",
