@@ -1,18 +1,18 @@
-import { parseMillis, untruncateYear, signedOffset, isDefined } from "./util";
-import { Formatter, FormatToken } from "./formatter";
-import { FixedOffsetZone } from "../zones/fixedOffsetZone";
-import { IANAZone } from "../zones/IANAZone";
-import { digitRegex, parseDigits } from "./digits";
-import { Locale } from "./locale";
+import { parseMillis, untruncateYear, signedOffset, isDefined } from "./util.ts";
+import { Formatter, FormatToken } from "./formatter.ts";
+import { FixedOffsetZone } from "../zones/fixedOffsetZone.ts";
+import { IANAZone } from "../zones/IANAZone.ts";
+import { digitRegex, parseDigits } from "./digits.ts";
+import { Locale } from "./locale.ts";
 import {
     GenericDateTime,
     ExplainedFormat,
     GenericDateTimeExtended
-} from "../types/datetime";
-import { Zone } from "../zone";
-import { DateTime } from "../datetime";
-import { ConflictingSpecificationError } from "../errors";
-import Intl from "../types/intl-next";
+} from "../types/datetime.ts";
+import { Zone } from "../zone.ts";
+import { DateTime } from "../datetime.ts";
+import { ConflictingSpecificationError } from "../errors.ts";
+import Intl from "../types/intl-next.ts";
 
 const missingFtp = "missing Intl.DateTimeFormat.formatToParts support";
 

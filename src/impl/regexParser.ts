@@ -5,12 +5,12 @@ import {
     parseMillis,
     isUndefined,
     parseFloating
-} from "./util";
-import * as English from "./english";
-import { FixedOffsetZone } from "../zones/fixedOffsetZone";
-import { IANAZone } from "../zones/IANAZone";
-import { Zone } from "../zone";
-import { GenericDateTime } from "../types/datetime";
+} from "./util.ts";
+import * as English from "./english.ts";
+import { FixedOffsetZone } from "../zones/fixedOffsetZone.ts";
+import { IANAZone } from "../zones/IANAZone.ts";
+import { Zone } from "../zone.ts";
+import { GenericDateTime } from "../types/datetime.ts";
 
 /*
  * This file handles parsing for well-specified formats. Here's how it works:

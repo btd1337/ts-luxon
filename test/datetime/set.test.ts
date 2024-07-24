@@ -1,5 +1,5 @@
 import { DateTime } from "../../src";
-import { InvalidUnitError } from "../../src/errors";
+import { InvalidUnitError } from "../../src/errors.ts";
 
 const dt = DateTime.fromJSDate(new Date(1982, 4, 25, 9, 23, 54, 123));
 
