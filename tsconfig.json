@@ -12,11 +12,13 @@
             "esnext"
         ],
         "allowJs": true,
+        "allowImportingTsExtensions": true,
         "importHelpers": true,
         "declaration": true,
         "sourceMap": true,
         "rootDir": "./src",
         "strict": true,
+        "noEmit": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noImplicitReturns": true,

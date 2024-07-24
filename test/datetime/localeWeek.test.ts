@@ -1,5 +1,5 @@
-import { DateTime } from "../../src/datetime";
-import { Info } from "../../src/info";
+import { DateTime } from "../../src/datetime.ts";
+import { Info } from "../../src/info.ts";
 import { Helpers } from "../helpers";
 
 const withDefaultWeekSettings = Helpers.setUnset("defaultWeekSettings");

@@ -2,13 +2,13 @@
  * @private
  */
 
-import { Zone } from "../zone";
-import { IANAZone } from "../zones/IANAZone";
-import { FixedOffsetZone } from "../zones/fixedOffsetZone";
-import { isUndefined, isString, isNumber } from "./util";
-import { ZoneLike } from "../types/zone";
-import { InvalidZone } from "../zones/invalidZone";
-import { SystemZone } from "../zones/systemZone";
+import { Zone } from "../zone.ts";
+import { IANAZone } from "../zones/IANAzone.ts";
+import { FixedOffsetZone } from "../zones/fixedOffsetzone.ts";
+import { isUndefined, isString, isNumber } from "./util.ts";
+import { ZoneLike } from "../types/zone.ts";
+import { InvalidZone } from "../zones/invalidzone.ts";
+import { SystemZone } from "../zones/systemzone.ts";
 
 export const normalizeZone = (input: ZoneLike, defaultZone: Zone): Zone => {
     if (isUndefined(input) || input === null) {

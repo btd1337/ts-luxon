@@ -5,16 +5,16 @@ import {
     hasLocaleWeekInfo,
     FALLBACK_WEEK_SETTINGS,
     validateWeekSettings
-} from "./util";
-import * as English from "./english";
-import { Settings } from "../settings";
-import { DateTime } from "../datetime";
-import { IANAZone } from "../zones/IANAZone";
-import Intl from "../types/intl-next";
-import { DayOfWeek, StringUnitLength, UnitLength, WeekUnitLengths } from "../types/common";
-import { LocaleOptions, NumberingSystem, CalendarSystem, WeekSettings } from "../types/locale";
-import { Zone } from "../zone";
-import { ZoneOffsetOptions } from "../types/zone";
+} from "./util.ts";
+import * as English from "./english.ts";
+import { Settings } from "../settings.ts";
+import { DateTime } from "../datetime.ts";
+import { IANAZone } from "../zones/IANAzone.ts";
+import Intl from "../types/intl-next.ts";
+import { DayOfWeek, StringUnitLength, UnitLength, WeekUnitLengths } from "../types/common.ts";
+import { LocaleOptions, NumberingSystem, CalendarSystem, WeekSettings } from "../types/locale.ts";
+import { Zone } from "../zone.ts";
+import { ZoneOffsetOptions } from "../types/zone.ts";
 
 // todo - remap caching
 

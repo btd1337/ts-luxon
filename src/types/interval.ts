@@ -1,4 +1,4 @@
-import { DateTime } from "../datetime";
+import { DateTime } from "../datetime.ts";
 
 export interface IntervalObject {
   start?: DateTime;

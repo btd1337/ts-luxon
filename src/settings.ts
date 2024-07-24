@@ -1,13 +1,13 @@
-import { IANAZone } from "./zones/IANAZone";
-import { Locale } from "./impl/locale";
-import { normalizeZone } from "./impl/zoneUtil";
-import { NumberingSystem, CalendarSystem, WeekSettings } from "./types/locale";
-import { Zone } from "./zone";
-import { SystemZone } from "./zones/systemZone";
-import { ZoneLike } from "./types/zone";
-import { validateWeekSettings } from "./impl/util";
-import { DateTime } from "./datetime";
-import { resetDigitRegexCache } from "./impl/digits";
+import { IANAZone } from "./zones/IANAzone.ts";
+import { Locale } from "./impl/locale.ts";
+import { normalizeZone } from "./impl/zoneutil.ts";
+import { NumberingSystem, CalendarSystem, WeekSettings } from "./types/locale.ts";
+import { Zone } from "./zone.ts";
+import { SystemZone } from "./zones/systemzone.ts";
+import { ZoneLike } from "./types/zone.ts";
+import { validateWeekSettings } from "./impl/util.ts";
+import { DateTime } from "./datetime.ts";
+import { resetDigitRegexCache } from "./impl/digits.ts";
 
 let now = (): number => Date.now(),
     defaultZone: ZoneLike | null = "system",

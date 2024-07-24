@@ -1,10 +1,10 @@
-import { Duration, DurationLike } from "./duration";
-import { Interval } from "./interval";
-import { Settings } from "./settings";
-import { Info } from "./info";
-import { Formatter } from "./impl/formatter";
-import { FixedOffsetZone } from "./zones/fixedOffsetZone";
-import { Locale } from "./impl/locale";
+import { Duration, DurationLike } from "./duration.ts";
+import { Interval } from "./interval.ts";
+import { Settings } from "./settings.ts";
+import { Info } from "./info.ts";
+import { Formatter } from "./impl/formatter.ts";
+import { FixedOffsetZone } from "./zones/fixedOffsetzone.ts";
+import { Locale } from "./impl/locale.ts";
 import {
     isDefined,
     isUndefined,
@@ -21,17 +21,17 @@ import {
     objToLocalTS,
     padStart,
     PLURAL_MAPPING
-} from "./impl/util";
-import { normalizeZone } from "./impl/zoneUtil";
-import { diff } from "./impl/diff";
-import { parseRFC2822Date, parseISODate, parseHTTPDate, parseSQL } from "./impl/regexParser";
+} from "./impl/util.ts";
+import { normalizeZone } from "./impl/zoneutil.ts";
+import { diff } from "./impl/diff.ts";
+import { parseRFC2822Date, parseISODate, parseHTTPDate, parseSQL } from "./impl/regexParser.ts";
 import {
     parseFromTokens,
     explainFromTokens,
     formatOptsToTokens,
     expandMacroTokens,
     TokenParser
-} from "./impl/tokenParser";
+} from "./impl/tokenParser.ts";
 import {
     gregorianToWeek,
     weekToGregorian,
@@ -42,15 +42,15 @@ import {
     hasInvalidOrdinalData,
     hasInvalidTimeData,
     usesLocalWeekValues
-} from "./impl/conversions";
-import * as Formats from "./impl/formats";
+} from "./impl/conversions.ts";
+import * as Formats from "./impl/formats.ts";
 import {
     InvalidArgumentError,
     ConflictingSpecificationError,
     InvalidUnitError,
     InvalidDateTimeError
-} from "./errors";
-import { Zone } from "./zone";
+} from "./errors.ts";
+import { Zone } from "./zone.ts";
 import {
     ToISOTimeOptions,
     ToISOFormat,
@@ -68,16 +68,16 @@ import {
     TimeObject,
     InnerBuildObjectConfig,
     GenericDateTimePlurals, GenericDateTimeExtended, DateTimeOptions, ExplainedFormat
-} from "./types/datetime";
-import { DurationUnit, DurationOptions, DurationObject } from "./types/duration";
-import { LocaleOptions, CalendarSystem, NumberingSystem } from "./types/locale";
-import { ZoneLike } from "./types/zone";
-import { Invalid } from "./types/invalid";
-import Intl from "./types/intl-next";
-import { DayOfWeek } from "./types/common";
+} from "./types/datetime.ts";
+import { DurationUnit, DurationOptions, DurationObject } from "./types/duration.ts";
+import { LocaleOptions, CalendarSystem, NumberingSystem } from "./types/locale.ts";
+import { ZoneLike } from "./types/zone.ts";
+import { Invalid } from "./types/invalid.ts";
+import Intl from "./types/intl-next.ts";
+import { DayOfWeek } from "./types/common.ts";
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
-const INVALID = "Invalid DateTime";
+const INVALID = "Invalid datetime.ts";
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const MAX_DATE = 8.64e15;
 

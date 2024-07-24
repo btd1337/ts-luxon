@@ -1,6 +1,6 @@
-import { formatOffset, parseZoneInfo } from "../impl/util";
-import { Zone } from "../zone";
-import { ZoneOffsetFormat, ZoneOffsetOptions } from "../types/zone";
+import { formatOffset, parseZoneInfo } from "../impl/util.ts";
+import { Zone } from "../zone.ts";
+import { ZoneOffsetFormat, ZoneOffsetOptions } from "../types/zone.ts";
 
 let singleton: SystemZone | null = null;
 
