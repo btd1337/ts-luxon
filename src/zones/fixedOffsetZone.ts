@@ -1,6 +1,6 @@
-import { formatOffset, signedOffset } from "../impl/util";
-import { Zone } from "../zone";
-import { ZoneOffsetFormat } from "../types/zone";
+import { formatOffset, signedOffset } from "../impl/util.ts";
+import { Zone } from "../zone.ts";
+import { ZoneOffsetFormat } from "../types/zone.ts";
 
 let singleton: FixedOffsetZone | null = null;
 

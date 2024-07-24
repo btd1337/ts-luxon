@@ -1,5 +1,5 @@
 import { DateTime, DateTimeOptions, Settings } from "../../src";
-import { ConflictingSpecificationError } from "../../src/errors";
+import { ConflictingSpecificationError } from "../../src/errors.ts";
 import { Helpers } from "../helpers";
 
 // ------

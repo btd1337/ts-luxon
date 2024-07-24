@@ -1,4 +1,4 @@
-import Intl from "../types/intl-next";
+import Intl from "../types/intl-next.ts";
 
 /**
  * @private

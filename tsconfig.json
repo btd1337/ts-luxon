@@ -12,8 +12,11 @@
             "esnext"
         ],
         "allowJs": true,
+        "allowImportingTsExtensions": true,
         "importHelpers": true,
         "declaration": true,
+        "emitDeclarationOnly": true,
+        "forceConsistentCasingInFileNames": true,
         "sourceMap": true,
         "rootDir": "./src",
         "strict": true,

@@ -1,14 +1,14 @@
-import { DateTime } from "./datetime";
-import { Settings } from "./settings";
-import { Locale } from "./impl/locale";
-import { IANAZone } from "./zones/IANAZone";
-import { Zone } from "./zone";
-import { normalizeZone } from "./impl/zoneUtil";
+import { DateTime } from "./datetime.ts";
+import { Settings } from "./settings.ts";
+import { Locale } from "./impl/locale.ts";
+import { IANAZone } from "./zones/IANAZone.ts";
+import { Zone } from "./zone.ts";
+import { normalizeZone } from "./impl/zoneUtil.ts";
 
-import { hasRelative, hasLocaleWeekInfo } from "./impl/util";
-import { DayOfWeek, StringUnitLength, UnitLength, WeekUnitLengths } from "./types/common";
-import { InfoOptions, InfoCalendarOptions, InfoUnitOptions, Features } from "./types/info";
-import { ZoneLike } from "./types/zone";
+import { hasRelative, hasLocaleWeekInfo } from "./impl/util.ts";
+import { DayOfWeek, StringUnitLength, UnitLength, WeekUnitLengths } from "./types/common.ts";
+import { InfoOptions, InfoCalendarOptions, InfoUnitOptions, Features } from "./types/info.ts";
+import { ZoneLike } from "./types/zone.ts";
 
 /**
  * The Info class contains static methods for retrieving general time and date related data. For example, it has methods for finding out if a time zone has a DST, for listing the months in any supported locale, and for discovering which of Luxon features are available in the current environment.

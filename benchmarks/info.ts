@@ -3,7 +3,7 @@
 import Benchmark from "benchmark";
 //
 import { Info } from "../src";
-import { Locale } from "../src/impl/locale";
+import { Locale } from "../src/impl/locale.ts";
 
 function runWeekdaysSuite() {
     return new Promise((resolve, reject) => {

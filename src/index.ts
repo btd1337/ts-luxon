@@ -1,17 +1,17 @@
-import { DateTime } from "./datetime";
-import { Duration } from "./duration";
-import { Interval } from "./interval";
-import { Info } from "./info";
-import { Zone } from "./zone";
-import { FixedOffsetZone } from "./zones/fixedOffsetZone";
-import { IANAZone } from "./zones/IANAZone";
-import { InvalidZone } from "./zones/invalidZone";
-import { SystemZone } from "./zones/systemZone";
-import { Settings } from "./settings";
-import { ORDERED_UNITS, REVERSE_ORDERED_UNITS } from "./impl/util";
-import { NormalizedDurationUnit } from "./types/duration";
+import { DateTime } from "./datetime.ts";
+import { Duration } from "./duration.ts";
+import { Interval } from "./interval.ts";
+import { Info } from "./info.ts";
+import { Zone } from "./zone.ts";
+import { FixedOffsetZone } from "./zones/fixedOffsetZone.ts";
+import { IANAZone } from "./zones/IANAZone.ts";
+import { InvalidZone } from "./zones/invalidZone.ts";
+import { SystemZone } from "./zones/systemZone.ts";
+import { Settings } from "./settings.ts";
+import { ORDERED_UNITS, REVERSE_ORDERED_UNITS } from "./impl/util.ts";
+import type { NormalizedDurationUnit } from "./types/duration.ts";
 
-export * from "./types/public";
+export * from "./types/public.ts";
 
 const VERSION = "__BUILD_VRS__"; // REPLACED WITH WEBPACK
 
@@ -26,8 +26,8 @@ export {
     InvalidZone,
     SystemZone,
     Settings,
+    NormalizedDurationUnit,
     VERSION,
     ORDERED_UNITS,
     REVERSE_ORDERED_UNITS,
-    NormalizedDurationUnit
 };

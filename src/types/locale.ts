@@ -1,4 +1,4 @@
-import { DayOfWeek } from "./common";
+import { DayOfWeek } from "./common.ts";
 
 export type NumberingSystem =
   | "arab"
